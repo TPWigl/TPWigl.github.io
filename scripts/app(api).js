@@ -2,7 +2,9 @@ class Forcast{
     constructor(){
         this.apiKey='pAdHBYCVwCmsjvEr63oUG9XRGLVLjpJO'
         this.weatherURI='https://dataservice.accuweather.com/currentconditions/v1/'
-        this.cityURI='https://dataservice.accuweather.com/locations/v1/cities/search'
+        this.cityURI='https://dataservice.accuweather.com/locations/v1/{327082}'
+
+//        this.cityURI='https://dataservice.accuweather.com/locations/v1/cities/search'
     }
     async updateCity(city){
         const cityData = await this.getCity(city)
